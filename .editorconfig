@@ -378,3 +378,11 @@ dotnet_naming_rule.parameters_rule.severity             = warning
 dotnet_diagnostic.CA1822.severity = none
 dotnet_diagnostic.IDE1006.severity = warn
 csharp_new_line_before_return = false
+
+# Not compatible with older dotnets, even though I like them
+# IDE0028: Simplify collection initialization
+dotnet_diagnostic.IDE0028.severity = none
+
+# I don't think these make code more readable 
+# IDE0290: Use primary constructor
+dotnet_diagnostic.IDE0290.severity = silent
